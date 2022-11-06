@@ -7,7 +7,7 @@ import { evaluate } from 'mathjs';
 
 function App() {
 
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState(0);
 
   const agregarInput = val => {
     setInput(input + val);
@@ -50,7 +50,7 @@ function App() {
           <Boton manejarClic={agregarInput}>/</Boton>
         </div>
         <div className='fila'>
-          <BotonClear manejarClear={() => setInput('')}>
+          <BotonClear manejarClear={() => setInput(0)}>
             Clear
           </BotonClear>
         </div>
